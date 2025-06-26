@@ -80,7 +80,7 @@ public class Music extends Item{
 
     public String toString(){
         return super.toString() +
-            String.format(", Author: %s, Runtime: %d, Published Year: %d, Number of Tracks: %d", this.getAuthor(), this.getRuntime(), this.getYear(), this.getTracks());
+            String.format(", Author: %s, Runtime: %d, Published Year: %d, Number of Tracks: %d]", this.getAuthor(), this.getRuntime(), this.getYear(), this.getTracks());
     }
 
 }

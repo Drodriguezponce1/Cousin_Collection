@@ -19,8 +19,11 @@ public class Item {
     }
 
     public String getGenre() {
-        if (this.genre.name().equals("DVD") || this.genre.name().equals("CD")) {
-            return this.genre.name();
+        
+        if (this.genre.name().equals("HIP_HOP")) {
+            return "Hip-Hop";
+        } else if (this.genre.name().equals("SCIENCE_FICTION")) {
+            return "Science-Fiction";
         }
 
         String temp = this.genre.name();
@@ -33,14 +36,11 @@ public class Item {
     }
 
     public String getMedia() {
-
-        if (this.media.name().equals("HIP_HOP")) {
-            return "Hip-Hop";
-        } else if (this.media.name().equals("SCIENCE_FICTION")) {
-            return "Science-Fiction";
+        if (this.media.name().equals("DVD") || this.media.name().equals("CD")) {
+            return this.media.name();
         }
 
-        String temp = media.name();
+        String temp = this.media.name();
 
         return temp.substring(0, 1).toUpperCase() + temp.substring(1).toLowerCase();
     }
